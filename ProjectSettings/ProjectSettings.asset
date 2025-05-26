@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 69501d27353f99d49a440c61331b0a67
+  productGUID: fe3704e7b8a119740a734419989205fa
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: JUASJUASJUAS
+  productName: Scriptable
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -630,14 +630,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: JUASJUASJUAS
+  metroPackageName: Scriptable
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: JUASJUASJUAS
+  metroApplicationDescription: Scriptable
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -706,10 +706,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 540f1284-876c-4e80-b7b2-78f24d1eefa4
+  cloudProjectId: d5f3e9de-4481-4e23-b459-d0d50f514d77
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: JUASJUASJUAS
+  projectName: Scriptable
   organizationId: ronixk
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
