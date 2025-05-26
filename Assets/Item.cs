@@ -8,13 +8,8 @@ public class Item : MonoBehaviour
 
    void Awake()
    {
-    spriteRendered = GetComponent<SpriteRenderer>();
+        spriteRendered = GetComponent<SpriteRenderer>();
    }
-
-    void Start()
-    {
-        //spriteRendered.sprite = itemInfo.itemSprite;
-    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
