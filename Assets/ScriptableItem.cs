@@ -1,20 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Item/New Item")]
 
-public class InventoryManager : MonoBehaviour
+public class ScriptableItem : ScriptableObject
 {
-    
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    public string nombre;
+    public int precio;
+    public Sprite itemSprite;
 }

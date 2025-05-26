@@ -4,5 +4,20 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public xxxxxx 
+   private SpriteRenderer spriteRendered;
+
+   void Awake()
+   {
+    spriteRendered = GetComponent<SpriteRenderer>();
+   }
+
+    void Start()
+    {
+        //spriteRendered.sprite = itemInfo.itemSprite;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Destroy(gameObject);
+    } 
 }
