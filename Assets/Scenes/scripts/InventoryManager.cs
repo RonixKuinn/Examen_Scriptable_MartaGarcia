@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager instance;
-    public ScriptableItem[] weapons;
-    public Text[] weaponsNames;
-    public Image[] weaponsSprites;
+   public static InventoryManager instance;
+   public ScriptableItem[] weapons;
+   public Text[] weaponsNames;
+   public Image[] weaponsSprites;
 
-    void Awake()
-    {
-        if (instance != null && instance != this)
+   public InventorySlot[] weaponSlots;
+
+   void Awake()
+   {
+        if(instance != null && instance != this)
         {
             Destroy(gameObject);
         }
@@ -20,17 +22,20 @@ public class InventoryManager : MonoBehaviour
         {
             instance = this;
         }
-    }
+   }
 
     public void AddItem(ScriptableItem item)
     {
-        for (int i = 0; i < weapons.Length; i++)
+        for (int i = 0; i < weapons.Length; i ++)
         {
-            if (weapons[i] == null)
+            if(weapons[i] == null)
             {
                 weapons[i] = item;
                 weaponsNames[i].text = item.itemName;
                 weaponsSprites[i].sprite = item.itemSprite;
+
+                weaponSlots[i].slotItem = item;
+                weaponSlots[i].slotNumber = i;
 
                 return;
             }
