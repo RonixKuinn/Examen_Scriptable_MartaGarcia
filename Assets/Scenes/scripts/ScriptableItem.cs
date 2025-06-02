@@ -7,7 +7,6 @@ using UnityEngine;
 public class ScriptableItem : ScriptableObject
 {
     public string itemName;
-    public string itemDescription;
     public int itemPrice;
     public Sprite itemSprite;
 }
