@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D rBody;
-    private float speed = 5;
-    private float horizontalInput;
+    public Rigidbody2D rBody;
+    public float speed = 5;
+    public float horizontalInput;
 
     void Awake()
     {

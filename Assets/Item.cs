@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        //InventoryManager.Instance.AddItem(itemInfo);
+        //InventoryManager.instance.AddItem(itemInfo)
         Destroy(gameObject);
     }
 }
