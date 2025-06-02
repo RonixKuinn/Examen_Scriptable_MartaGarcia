@@ -10,8 +10,6 @@ public class InventoryManager : MonoBehaviour
    public Text[] weaponsNames;
    public Image[] weaponsSprites;
 
-   public InventorySlot[] weaponSlots;
-
    void Awake()
    {
         if(instance != null && instance != this)
@@ -33,9 +31,6 @@ public class InventoryManager : MonoBehaviour
                 weapons[i] = item;
                 weaponsNames[i].text = item.itemName;
                 weaponsSprites[i].sprite = item.itemSprite;
-
-                weaponSlots[i].slotItem = item;
-                weaponSlots[i].slotNumber = i;
 
                 return;
             }
