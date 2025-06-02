@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public ScriptableItem itemInfo;
+    private SpriteRenderer spriteRendered;
+
+    void Awake()
     {
-        
+        spriteRendered = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        spriteRendered.sprite = itemInfo.itemSprite;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        //InventoryManager.Instance.AddItem(itemInfo);
+        Destroy(gameObject);
     }
 }
