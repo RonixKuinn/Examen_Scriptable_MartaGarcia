@@ -9,7 +9,7 @@ public class Item : MonoBehaviour
 
     void Awake()
     {
-        spriteRendered = GetComponent<SpriteRenderer>();
+     spriteRendered = GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -19,7 +19,8 @@ public class Item : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        //InventoryManager.instance.AddItem(itemInfo)
+        InventoryManager.instance.AddItem(itemInfo);
         Destroy(gameObject);
     }
+
 }
